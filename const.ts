@@ -1,21 +1,21 @@
-const StatisticTypePreviousMapping: Record<StatisticType, StatisticType> = {
-    [StatisticType.MINUTE]: StatisticType.MINUTE,
-    [StatisticType.HOUR]: StatisticType.MINUTE,
-    [StatisticType.DAY]: StatisticType.HOUR,
-    [StatisticType.MONTH]: StatisticType.DAY,
-    [StatisticType.YEAR]: StatisticType.MINUTE
+export const StatisticTypePreviousMapping: Record<StatisticType, StatisticType> = {
+    MINUTE: "MINUTE",
+    HOUR: "MINUTE",
+    DAY: "HOUR",
+    MONTH: "DAY",
+    YEAR: "MONTH"
 }
-const StatisticTypeNextMapping: Record<StatisticType, StatisticType> = {
-    [StatisticType.MINUTE]: StatisticType.HOUR,
-    [StatisticType.HOUR]: StatisticType.DAY,
-    [StatisticType.DAY]: StatisticType.MONTH,
-    [StatisticType.MONTH]: StatisticType.YEAR,
-    [StatisticType.YEAR]: StatisticType.YEAR
+export const StatisticTypeNextMapping: Record<StatisticType, StatisticType> = {
+    MINUTE: "HOUR",
+    HOUR: "DAY",
+    DAY: "MONTH",
+    MONTH: "YEAR",
+    YEAR: "YEAR"
 }
-const StatisticTimeMapping = {
-    [StatisticType.MINUTE]: 60,
-    [StatisticType.HOUR]: 3600,
-    [StatisticType.DAY]: 86400,
-    [StatisticType.MONTH]: 2628000,
-    [StatisticType.YEAR]: 31536000
+export const StatisticTimeMapping: Record<StatisticType, number> = {
+    MINUTE: 60,
+    HOUR: 3600,
+    DAY: 86400,
+    MONTH: 2628000,
+    YEAR: 31536000
 }

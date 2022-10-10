@@ -1,10 +1,4 @@
-const enum StatisticType {
-    MINUTE = "MINUTE",
-    HOUR = "HOUR",
-    DAY = "DAY",
-    MONTH = "MONTH",
-    YEAR = "YEAR"
-}
+type StatisticType = "MINUTE" | "HOUR" | "DAY" | "MONTH" | "YEAR";
 type Statistic = {
     id: string;
     author: string;
