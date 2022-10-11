@@ -1,15 +1,16 @@
 type Container = {
     id: string;
+    rawId: string;
     author: string | null;
     server: string;
     parent: string | null;
     image: string;
     creation: number;
-    ports: string;
+    ports: string[];
     status: string;
     name: string;
-    mounts: string;
-    networks: string;
+    mounts: string[];
+    networks: string[];
 };
 type ContainerStructured = Container & {
     statistics: ContainerStatistic[];
@@ -20,6 +21,7 @@ type ContainerStatistic = {
     author: string;
     parent: string;
     timestamp: number;
+    type: StatisticType;
     rx: number;
     tx: number;
     cpu: number;
