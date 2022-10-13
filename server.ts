@@ -15,11 +15,12 @@ type ServerStructured = Server & {
     network: Network;
     software: ServerSoftware[];
     disks: DiskStructured[];
-    zfsPools: ZFSPoolStructured[];
+    zfs: ZFSPoolStructured[];
     containers: ContainerStructured[];
     databases: Database[];
     smb: SMBInstanceStructured[];
-    public: PublicServerListing;
+    nfs : NFSInstanceStructured[];
+    public: PublicServerListing | null;
 };
 
 type ServerConfig = {

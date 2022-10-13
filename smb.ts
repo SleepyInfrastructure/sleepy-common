@@ -5,7 +5,6 @@ type SMBInstance = {
     name: string;
     recycle: boolean;
 };
-
 type SMBInstanceStructured = SMBInstance & {
     shares: SMBShare[];
     users: SMBUser[];
@@ -35,8 +34,8 @@ type SMBUser = {
 
 /* Calls */
 type SMBInstanceCreate = {
-    name: string;
     server: string;
+    name: string;
     recycle: boolean;
 };
 type SMBInstanceEdit = {
@@ -46,8 +45,8 @@ type SMBInstanceEdit = {
 };
 
 type SMBShareCreate = {
-    name: string;
     parent: string;
+    name: string;
     path: string;
     browsable: boolean;
     readonly: boolean;
@@ -67,8 +66,8 @@ type SMBShareEdit = {
 };
 
 type SMBUserCreate = {
-    name: string;
     parent: string;
+    name: string;
 };
 type SMBUserEdit = {
     id: string;
