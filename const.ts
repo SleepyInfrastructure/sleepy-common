@@ -19,3 +19,7 @@ export const StatisticTimeMapping: Record<StatisticType, number> = {
     MONTH: 2628000,
     YEAR: 31536000
 }
+
+export const NET_HIGH_LOAD = 1048576 * 60; // 60 MiB (network usage is per minute)
+export const DISK_HIGH_LOAD = 1048576; // 1 MiB (disk load is per second)
+export const DISK_HIGH_LATENCY = 30;
