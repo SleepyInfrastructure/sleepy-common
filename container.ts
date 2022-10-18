@@ -1,7 +1,7 @@
 type Container = {
     id: string;
     rawId: string;
-    author: string | null;
+    author: string;
     server: string;
     parent: string | null;
     image: string;
@@ -32,7 +32,7 @@ type ContainerStatistic = {
 
 type ContainerProject = {
     id: string;
-    author: string | null;
+    author: string;
     server: string;
     name: string;
     status: string;

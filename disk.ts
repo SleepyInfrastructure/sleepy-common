@@ -1,7 +1,7 @@
 type Disk = {
     id: string;
     ptuuid: string | null;
-    author: string | null;
+    author: string;
     server: string;
     name: string;
     ssd: boolean;
@@ -29,7 +29,7 @@ type Partition = {
     id: string;
     uuid: string | null;
     partuuid: string | null;
-    author: string | null;
+    author: string;
     parent: string;
     server: string;
     name: string;
