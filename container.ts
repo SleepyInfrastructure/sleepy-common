@@ -45,4 +45,5 @@ type ContainerProjectStructured = ContainerProject & {
 type ContainerConnectLogOptions = {
     project: boolean;
     tail: number;
-}
+};
+type ContainerAction = "START" | "STOP" | "BUILD" | "REMOVE" | "RESTART" | "REBUILD";
