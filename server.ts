@@ -19,6 +19,7 @@ type ServerStructured = Server & {
     containers: ContainerStructured[];
     databases: Database[];
     smb: SMBInstanceStructured[];
+    nginx: NginxInstanceStructured[];
     nfs : NFSInstanceStructured[];
     public: PublicServerListing | null;
 };

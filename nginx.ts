@@ -34,6 +34,7 @@ type NginxLocation = {
     type: NginxLocationType;
     path: string;
     endpoint: string;
+    cors: boolean;
 };
 
 /* Calls */
@@ -75,6 +76,7 @@ type NginxLocationCreate = {
     type: NginxLocationType;
     path: string;
     endpoint: string;
+    cors: boolean;
 };
 type NginxLocationEdit = {
     id: string;
@@ -82,4 +84,5 @@ type NginxLocationEdit = {
     type?: NginxLocationType;
     path?: string;
     endpoint?: string;
+    cors?: boolean;
 };
