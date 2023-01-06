@@ -33,8 +33,9 @@ type Partition = {
     parent: string;
     server: string;
     name: string;
-    type: string;
+    type: string | null;
     size: number;
     used: number | null;
     mountpoint?: string;
+    flags: number;
 };
