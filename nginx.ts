@@ -15,7 +15,7 @@ type NginxServer = {
     parent: string;
     name: string;
     domain: string;
-    expires: number;
+    expires: string;
     origins: string[];
     ssl: string;
     httpRedirect: boolean;
